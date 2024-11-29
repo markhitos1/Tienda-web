@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/icons/tienda.png" type="image/x-icon">
+</head>
+<body>
+    
+     <nav class="navbar" >
+       
+         <div class="menu-logo" id="storeButton">
+            <span class="name-tienda">Mi Tienda</span>
+            <div class='logo'>
+           <img  src="/icons/tienda.png" alt="logo">
+        </div>
+         </div>
+     <ul class='nav-links'>
+      <li><a href='#inicio'>Inicio</a></li>
+      <li><a href='#historia'>Historia</a></li>
+      <li><a href='#servicio'>Servicio</a></li>
+      <li><a class="hidden" href='#documento'>Documento</a></li>
+     </ul>
+    </nav>
+<!-- barra lateral -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">Categorías</div>
+        <ul>
+          <li class="gorras" >Gorras</li>
+          <li class="pantalones" >Pantalones</li>
+          <li class="Remeras" >Remeras</li>
+          <li class="Zapatillas" >Zapatillas</li>
+        </ul>
+        <button class="close-button" id="closeButton">Cerrar</button>
+      </div>
+
+<!-- secciones de ropas -->
+    <div class="conteiner-ropas">
+
+        <div class="seccion-ropas" >
+            <div class="nombre-valoracion">
+                <h3 class="nombre" >gorra</h3>
+                <span class="estrella">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg> 
+                </span>  
+            </div>
+            <div class="img-ropa">
+                <img src="/img/pantalones/pantalon-1.png" alt="gorra-1">
+            </div>
+            <p > Precio: <span class="precio">$10</span> <span class="precio-viejo" > $15  </span> </p>
+           <div>
+            <button class="carrito" >Carrito</button>
+            <button class="comprar" >Comprar</button>
+           </div>
+         </div>
+    
+    
+    </div>
+
+    <script src="script.js"  ></script>
+</body>
+</html>
