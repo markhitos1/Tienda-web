@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding:50px 0;
     font-family: sans-serif;
-    background-color: #e6e2ad;
+    background-color: #fff;
 }
 
 
@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orange;
+    background-color: #ff9100;
     padding:0 ;
     position: fixed;
     top: 0;
@@ -78,6 +78,13 @@ body{
     ul.nav-links li a{
         font-size: 0.8rem;
         margin-left: 0;
+    }
+    .contenedor-inicio{
+      flex-direction: column;
+      padding-top: 250px;
+    }
+    .descuento-dia{
+      margin-top: 100px;
     }
 }
 @media (max-width:600px) {
@@ -201,6 +208,7 @@ body{
 
   /* secciones de gorras */
   .conteiner-ropas{
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -216,6 +224,8 @@ body{
     height: 400px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: #a39d9d41 0 0 20px 20px;
+    z-index: 100;
   }
   .nombre-valoracion{
     width: 100%;
@@ -243,6 +253,8 @@ body{
     border-radius: 10px;
     padding: 15px;
     margin: 0 10px;
+    display: block;
+    position: relative;
   }
   .precio{
     color: green;
@@ -308,6 +320,19 @@ body{
         height: 400px;
         background-color: white;
         border-radius: 10px;
+      }
+      .title-off{
+        display: none;
+      }
+      .contenedor-inicio{
+        display: flex;
+        justify-content: center;
+      }
+      .descuento-dia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
       }
   }
 

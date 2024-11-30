@@ -1,0 +1,106 @@
+
+@font-face {
+    font-family: 'FugazOne'; /* Nombre que usarás en CSS */
+    src: url('./fonts/mi-fuente.woff2') format('ttf'),
+         url('./fonts/mi-fuente.woff') format('ttf'),
+         url('./font/FugazOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.contenedor-inicio{
+    display:inherit;
+}
+.img-body{
+
+    display:block  ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:absolute ;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* display: none; */
+.contenedor-inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.descuento-dia{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border: 5px solid rgba(0, 0, 0, 0.384);
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    background-color: #f0f8ffd0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.562) 20px 20px 50px;
+}
+
+.descuento-dia h3{
+    font-family: 'FugazOne';
+    font-weight:bolder ;
+    font-size: 2rem;
+    color: #cc4f15;
+    text-shadow: rgba(0, 0, 0, 0.356) 1px 1px ;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+.mostrador-ropas{
+    display: flex;
+    justify-content:center;
+  
+}
+
+.descuento-imagen{
+    display: block;
+    width: 150px;
+    height: max-content;
+    z-index: 10;
+    opacity: 1;
+    margin-left: 10px;
+}
+.img-off{
+    display:flex;
+    align-items: center;
+    justify-content: center ;
+    z-index: 20;
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+    margin-right: 0;
+    margin-top: 30%;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.img-off .off{
+    font-size: 2rem;
+}
+.title-off{
+    display: inline-block;
+    width: 200px;
+    height: 130px;
+    border: 5px solid rgba(0, 0, 0, 0.438);
+    background-color: #ffcdcde3;
+    text-align: center;
+    margin-top: -200px;
+    line-height: 1rem;
+    padding-top: 20px;
+    box-shadow:#fddcdcd0 0px 0px 50px 50px ;
+}
+.title-off .off{
+    font-size: 3rem;
+    font-family: 'fugazOne';
+}
