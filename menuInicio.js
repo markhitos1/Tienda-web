@@ -14,7 +14,7 @@ let htmlInicio = `
             <div class="mostrador-ropas" >
             <img class="descuento-imagen" src="/img/remeras/remeras-15.png" alt="remeras">
             <div class="img-off" >
-                <span class="off">30%</span>
+                <span class="off">${porHoyDescuento}%</span>
                 <p>off</p>
             </div>
            </div>
@@ -23,7 +23,7 @@ let htmlInicio = `
 
        <div class="title-off">
         <h2>
-            <span class="off">30%</span>
+            <span class="off">${porHoyDescuento}%</span>
             <p>OFF</p>
         </h2>
        </div>
@@ -37,7 +37,7 @@ let htmlInicio = `
         <div class="mostrador-ropas" >
         <img class="descuento-imagen" src="/img/remeras/remeras-13.png" alt="remeras">
         <div class="img-off" >
-            <span class="off">30%</span>
+            <span class="off">${porHoyDescuento}%</span>
             <p>off</p>
         </div>
        </div>

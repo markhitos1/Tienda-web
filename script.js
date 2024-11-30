@@ -9,8 +9,15 @@
   const contenedorRopas = document.querySelector('.conteiner-ropas');
   const contenedorInicio = document.querySelector('.contenedor-inicio');
   const imgBody = document.querySelector('.img-body');
+  const clasOff = document.querySelectorAll('span.off');
+
   const porHoyDescuento = Math.floor(Math.random() * 80);
   
+  
+  for(let i = 0; i < clasOff.length; i++){
+    clasOff[i].textContent = porHoyDescuento + '%'
+  }
+
   let totalGorras = 16;
   let totalPantalones = 20;
   let totalRemeras = 16;
@@ -69,11 +76,14 @@
                 <span class="estrella">
                   ${valEstrella}
                 </span>  
-            </div>
-            <div class="img-ropa">
+                </div>
+                <div class="img-ropa">
                 <img src="img/gorras/gorra-${img}.png" alt="gorra">
-            </div>
-            <p > Precio: <span class="precio">$${precioAhora}</span> <span class="precio-viejo" > $${precioAnterior}  </span> </p>
+                </div>
+                <p > Precio: <span class="precio">$${precioAhora}</span> 
+                <span class="precio-viejo" > $${precioAnterior}  </span>
+                <span class="precio-off">-${porHoyDescuento}%</span>
+             </p>
            <div>
             <button class="carrito" >Carrito</button>
             <button class="comprar" >Comprar</button>
@@ -111,7 +121,10 @@
             <div class="img-ropa">
                 <img src="/img/pantalones/pantalon-${img}.png" alt="pantalon">
             </div>
-            <p > Precio: <span class="precio">$${precioAhora}</span> <span class="precio-viejo" > $${precioAnterior}  </span> </p>
+            <p > Precio: <span class="precio">$${precioAhora}</span> 
+            <span class="precio-viejo" > $${precioAnterior}  </span> 
+             <span class="precio-off">-${porHoyDescuento}%</span>
+            </p>
            <div>
             <button class="carrito" >Carrito</button>
             <button class="comprar" >Comprar</button>
@@ -150,7 +163,10 @@
             <div class="img-ropa">
                 <img src="/img/remeras/remeras-${img}.png" alt="pantalon">
             </div>
-            <p > Precio: <span class="precio">$${precioAhora}</span> <span class="precio-viejo" > $${precioAnterior}  </span> </p>
+            <p > Precio: <span class="precio">$${precioAhora}</span> 
+            <span class="precio-viejo" > $${precioAnterior}  </span> 
+             <span class="precio-off">-${porHoyDescuento}%</span>
+            </p>
            <div>
             <button class="carrito" >Carrito</button>
             <button class="comprar" >Comprar</button>
@@ -184,11 +200,15 @@
                 <span class="estrella">
                   ${valEstrella}
                 </span>  
+              
             </div>
             <div class="img-ropa">
                 <img src="/img/zapatillas/zapatilla-${img}.png" alt="zapatilla">
             </div>
-            <p > Precio: <span class="precio">$${precioAhora}</span> <span class="precio-viejo" > $${precioAnterior}  </span> </p>
+            <p > Precio: <span class="precio">$${precioAhora}</span> 
+            <span class="precio-viejo" > $${precioAnterior}  </span> 
+             <span class="precio-off">-${porHoyDescuento}%</span>
+            </p>
            <div>
             <button class="carrito" >Carrito</button>
             <button class="comprar" >Comprar</button>
